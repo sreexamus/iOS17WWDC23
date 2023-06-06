@@ -1,0 +1,16 @@
+WWWWDC 2 Updates:-
+
+SwiftUI Updates:-
+
+1. SwiftData Framework introduced to replace CoreData.
+2. KeyFrames introduced for smooth animation letting us to define multiple values of properties with timing, motiton for each property , pitch, heading etc.
+3. ObservableObject is no longer needed in iOS17. we just need to use Observable macro for the class. All public varaibles will be published.
+    @Observable
+    class GoodsFarmViewModel {
+       var name: String
+       var details: String
+    }
+
+   struct GoodView: View {
+      var viewModel: GoodsFarm
+   }
