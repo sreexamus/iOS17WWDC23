@@ -2,7 +2,12 @@ WWWWDC 2 Updates:-
 
 SwiftUI Updates:-
 
-1. SwiftData Framework introduced to replace CoreData.
+1. SwiftData Framework introduced to replace CoreData. No need of creating Model file and define the properties in it. we just need to use Model Macro.
+   @Model
+   Class Student {
+      var name: String
+      var age: Int
+   }
 2. KeyFrames introduced for smooth animation letting us to define multiple values of properties with timing, motiton for each property , pitch, heading etc.
 3. ObservableObject is no longer needed in iOS17. we just need to use Observable macro for the class. All public varaibles will be published.
     @Observable
